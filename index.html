@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saraipara Ideal School & College</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    /* Scrolling Footer Style */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #001f33;
+      color: #ffcc00;
+      font-family: 'Orbitron', sans-serif;
+      padding: 10px 0;
+      overflow: hidden;
+      z-index: 1000;
+    }
+    .scrolling-text {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: scrollText 15s linear infinite;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    @keyframes scrollText {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img src="https://images.pexels.com/photos/31667913/pexels-photo-31667913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Logo">
+        <h1>Saraipara Ideal School & College</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Saraipara Ideal school & college</h2>
+    <p>Inspiring excellence, creativity, and leadership.</p>
+    <a href="#about" class="btn">Learn More</a>
+  </section>
+<!-- About Section -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-section">
+      <h2>About Us</h2>
+      <p>Saraipara Ideal School & College is dedicated to fostering academic excellence, innovation, and leadership. Our passionate educators and inclusive community ensure every student has the tools to succeed and make a difference.</p>
+    </div>
+  </div>
+</section>
+<script>
+  const reveals = document.querySelectorAll(".scroll-reveal");
+
+  function revealOnScroll() {
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const elementVisible = 100;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll(); // run once on page load
+</script>
+
+
+  <!-- Courses Section -->
+  <section id="courses" class="section section-alt">
+    <div class="container">
+      <h2>Our Courses</h2>
+      <div class="courses-grid">
+        <div class="course-card">Mathematics</div>
+        <div class="course-card">Science</div>
+        <div class="course-card">Literature</div>
+        <div class="course-card">Commerce</div>
+        <div class="course-card">Technology</div>
+        <div class="course-card">Art's</div>
+      </div>
+    </div>
+
+  </section>
+  <section class="headmaster-message">
+    <div class="container">
+      <div class="message-card">
+        <img src="" alt="Headmaster Photo" class="headmaster-photo" />
+        <div class="message-content">
+          <h2>Teacher's  Message</h2>
+          <p>
+            Assalamualaikum. Welcome to Saraipara Ideal School & College.  
+            Education is the most powerful weapon we can use to change the world.  
+            Our mission is to empower students with knowledge, discipline, and moral values  
+            to prepare them for a better future. We believe every student is unique  
+            and has the potential to shine. Let us work together to build a brighter generation.
+          </p>
+          <p class="signature">— </p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Bangla Introduction Section -->
+<section class="bangla-intro">
+  <div class="bangla-text">
+    <h2>আমাদের স্কুলের পরিচিতি</h2>
+    <p>এই স্কুলটি ১৯৮৫ সালে প্রতিষ্ঠিত হয়।</p>
+    <p>স্বাগতম, সারাইপাড়া আইডিয়াল স্কুল অ্যান্ড কলেজে</p>
+  </div>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admission Notice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .notice-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .notice-container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px rgba(0, 123, 94, 0.3);
+    }
+
+    .notice-header {
+      text-align: center;
+      color: #007b5e;
+    }
+
+    .notice-date {
+      text-align: right;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .notice-body {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .download-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #007b5e;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .download-button:hover {
+      background: #00543d;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="notice-container">
+    <h2 class="notice-header">Admission Notice – 2025</h2>
+    <div class="notice-date">Published: May 2, 2025</div>
+    <div class="notice-body">
+      <p>We are pleased to announce that admission for the academic year 2025 is now open at ACCA School. Interested students are advised to collect the admission form from the school office or download it from the link below.</p>
+
+      <ul>
+        <li>Classes: Nursery to Class 10</li>
+        <li>Last date of form submission: June 10, 2025</li>
+        <li>Admission Test Date: June 15, 2025</li>
+        <li>Required Documents: Birth Certificate, Passport-sized photo (2 copies)</li>
+      </ul>
+
+      <a class="download-button" href="admission_form.pdf" download>📄 Download Admission Form</a>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:mdparvejchowdhury60@gmail.com">mdparvejchowdhury60@gmail.com</a></p>
+    <p>Phone: <a href="tel:+8801815338072">+880 01815338072</a></p>
+    <p>Address: Chattogram, Pahartoli</p>
+
+    <!-- Stylish WhatsApp Button -->
+    <a href="https://wa.me/+8801815338072" class="contact-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 24px; margin-right: 10px;" />
+      Chat on WhatsApp
+    </a>
+  </div>
+</section>
+
+<style>
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: #25d366; /* WhatsApp Green */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .contact-btn:hover {
+    background-color: #128c7e; /* Darker WhatsApp Green on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+  
+  <!-- Social Section -->
+  <section class="section">
+    <div class="container">
+      <h2>Follow Us</h2>
+      <p>
+        <a href="https://www.youtube.com/@saraiparaidealschoolcolleg1787" target="_blank" style="text-decoration: none; font-weight: bold; color: red; display: inline-flex; align-items: center; gap: 8px;">
+          <img src="https://images.freeimages.com/fic/images/icons/2781/google_jfk_icons/256/youtube_ico.png?fmt=webp&h=350" width="24" alt="YouTube">
+          YouTube
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Stylish Scrolling Footer -->
+  <footer>
+    <div class="scrolling-text">
+      © 2025 Saraipara Ideal School & College. Website Developed by Omar Faruk.
+    </div>
+  </footer>
+  <script>
+ <script>
+    // Sanitize function to protect against XSS
+    function sanitizeInput(input) {
+      // Replacing < and > with HTML entities to prevent script execution
+      let sanitized = input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return sanitized;
+    }
+
+    // Display sanitized input in a div
+    function displaySanitizedInput() {
+      let userInput = document.getElementById("userInput").value;
+      let sanitizedInput = sanitizeInput(userInput);
+      document.getElementById("output").innerHTML = sanitizedInput;
+    }
+  </script>
+</head>
+<body>
+  <h2></h2>
+  <input type="text" id="userInput" placeholder="Enter your text here">
+  <button onclick="displaySanitizedInput()">Show Safe Input</button>
+
+  <div id="output"></div>
+</body>
+</html>
